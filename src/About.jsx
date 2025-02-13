@@ -1,25 +1,15 @@
 import React from 'react'
 import {  useState } from 'react'
 
-const About = () => {
+const About = (props) => {
 
-  let [count,setcount] = useState(0)
+  console.log(props.data)
 
-  let increment = () =>{
-    setcount(count+1)
-  }
-
-  let decrement = () =>{
-
-    setcount(count-1)
-  }
   return (
   
     <div>
       <h1>About</h1>
-      <h2>{count}</h2>
-      <button onClick={increment}>Increment</button>&nbsp;
-      <button onClick={decrement}>Decrement</button>  
+      <h2>{props.data}</h2> 
     </div>
   )
 }
