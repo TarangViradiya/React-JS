@@ -14,11 +14,16 @@ const Home = () => {
     setcount(count-1)
   }
 
+  let reset = () =>{
+    setcount(0)
+  }
+
   return (
   
     <div>
       <button onClick={increment}>Increment</button>&nbsp;
-      <button onClick={decrement}>Decrement</button> 
+      <button onClick={decrement}>Decrement</button> &nbsp;
+      <button onClick={reset}>Reset</button>
       <About data={count} />
     </div>
   )
