@@ -1,15 +1,15 @@
 import React from 'react'
 import {  useState } from 'react'
+import Contact from './Contact'
 
-const About = (props) => {
+const About = () => {
 
-  console.log(props.data)
-
+  
+ 
   return (
   
     <div>
-      <h1>About</h1>
-      <h2>{props.data}</h2> 
+      <button></button>
     </div>
   )
 }
